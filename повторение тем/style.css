@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    /* align-content: space-between; */
+    /* flex-wrap: wrap; */
+    height: 100px;
+    /* align-content: space-around; */
+}
+.item {
+    /* margin: 10px; */
+    /* padding: 100px; */
+    border: 2px solid brown;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+}
+.item1 {
+    padding: 30px;
+    order: 2;
+     flex-basis: 200px;
+     flex: 2 0 200px;
+     /* свойство  flex-grow 2 flex-shrink 0 flex-basis 200px  */
+    /* flex-shrink: 0; */
+   
+    /* НЕ дает уменьшится элементу */
+    /* flex-grow: 2; */
+    /* растягивает элемент */
+}
+.item2 {
+padding: 30px;
+order: 3;
+/* flex-grow: 8; */
+}
+.item3 {
+    align-self: center;
+    /* ОБРАЩАЕТСЯ К РЕБЕНКУ */
+    /* align-items: ; */
+    /* ОБРАЩАЕТСЯ К РОДИТЕЛЮ */
+    padding: 30px;
+    order: 1;
+    /* flex-grow: 2; */
+}

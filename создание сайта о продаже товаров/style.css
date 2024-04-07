@@ -1,0 +1,37 @@
+body {
+    background-color: darkseagreen;
+}
+.iphone {
+    width: 400px;
+    height: 500px;
+}
+.samsung{
+width: 600px;
+height: 500px;
+}
+
+header > a {
+    margin: 150px;
+    color: aqua;
+}
+a {
+    text-decoration-line: none;
+}
+footer > a {
+    margin: 120px;
+    color: darkblue;
+}
+p {
+    height: 20px;
+    width: 20px;
+    color: blue ; 
+}
+.fixed-button {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+    background-color: aqua;
+    color:blue;
+    border: none;
+}

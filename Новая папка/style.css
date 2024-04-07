@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(254, 54, 54);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header a {
+    padding-left: 20px;
+    color: black;
+  }
+  header nav {
+    padding-top: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  header button {
+    background-color: rgb(254, 54, 54);
+    padding: 10px 10px;
+  }
+  
+  a:hover, button:hover {
+    color: cadetblue;
+  }
+
+  button:active {
+    color: black;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .cards img {
+    height: 350px;
+    width: 300px;
+    padding-left: 60px;
+  }
+  .cards p,
+  h2,
+  a {
+    margin-left: 20px;
+  }
+  
+  .cards div {
+    margin-top: 50px;
+    width: 390px;
+    background-color: rgb(102, 102, 250);
+  }
+  
+  .cards div a {
+    color: rgb(45, 45, 219);
+  }
+  
+  span {
+    background-color: rgb(255, 107, 107);
+  }
+  
+  p.rating {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  p.rating::before {
+    content: "|";
+    margin-right: 10px;
+    background-color: azure;
+  }
+  .жанр {
+    color: rgb(36, 117, 36);
+    background-color: rgb(102, 102, 250)
+  }
+  h2 {
+    margin-bottom: 10px;
+  }

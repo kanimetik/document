@@ -1,0 +1,138 @@
+.animation {
+  position: relative;
+  animation-delay: 1s;
+  /* ждет 1 секунду перед тем как начать анимацию */
+  animation-name: example;
+  animation-duration: 5s;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-iteration-count: 3;
+  /* анимация повторится 3 раза */
+  animation-iteration-count: infinite;
+  /* анимация будет бесконечной */
+  animation-direction: reverse;
+  /* анимация будет в обратном порядке */
+  animation-direction: alternate;
+  /* анимация начнется сначала вперед потом назад */
+animation-timing-function: linear;
+/* ease- Определяет анимацию с медленным началом, затем быстрым, затем медленным завершением (это значение по умолчанию)
+linear- Задает анимацию с одинаковой скоростью от начала до конца
+ease-in- Задает анимацию с медленным стартом
+ease-out- Определяет анимацию с медленным концом
+ease-in-out- Определяет анимацию с медленным началом и концом */
+animation-fill-mode: forwards;
+/* стили останутся как в 100% */
+
+}
+@keyframes example {
+  0% {
+    left: 0px;
+    background-color: blue;
+  }
+  50% {
+    transform:
+     translate(
+      600px, 
+      /* сверху вниз */
+      500px
+      /* слево вправо */
+      );
+    left: 200px;
+    background-color: brown;
+    transform: rotate(360deg);
+    /* крутит элемент на 360 градусов */
+    transform: scale(2,
+    /* в 2 раза увеличивает ширину */
+    3);
+    /* в 3 раза увеличивает высоту */
+    z-index: 1;
+    /* делает эдемент над кнопкой */
+  }
+    100% {
+      left: 400px;
+      background-color: chartreuse;
+  }
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    /* указующая рука */
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    /* удаляется контурная рамка у элемента когда он находится в фокусе */
+  }
+.btn-12{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-12 span {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    transform: rotateX(-90deg);
+  }
+
+
+
+
+
+    p:nth-child(1) {
+
+    }
+    /* выберает 7 р в родительском элементе */

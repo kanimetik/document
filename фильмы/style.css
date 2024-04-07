@@ -1,0 +1,46 @@
+body {
+    background-color: grey;
+}
+.images1, .images2, .images3{
+
+    margin: auto;
+}
+img {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+}
+.images1 {
+    display: flex;
+    background-color: white;
+    width: 1220px;
+    height: 1020px;
+    text-justify: space-between;
+} 
+.images2 {
+    display: flex;
+    background-color: white;
+    width: 1220px;
+    height: 1000px;
+}
+.images3 {
+    display: flex;
+    background-color: white;
+    width: 1220px;
+    height: 1090px;
+}
+.film {
+    margin-right: 10px;
+    border: 2px blue;
+}
+span {
+    background-color: rgb(237, 75, 75);
+}
+p {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+}
+a {
+    text-decoration: none;
+}

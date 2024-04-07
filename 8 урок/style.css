@@ -1,0 +1,62 @@
+.block {
+    display: flex;
+    /* flex-direction: column; */
+    /* все элементы встают в колонку */
+    /* flex-direction: column-reverse; */
+    /* переворачивает колонку */
+    background-color: blueviolet;
+    /* flex-direction: row; */
+    /* вряд */
+    /* flex-direction: row-reverse */
+    /* ПЕРЕворачивает ряд */
+    /* flex-wrap: wrap; */
+    /* переносит элемент на след строку */
+    /* flex-wrap: nowrap; */
+    /* не преносит элемент на след строку */
+    /* flex-wrap: wrap-reverse; */
+    /* перенесены в обратном порядке */
+    /* flex-flow: row wrap ; */
+    /* 1 значение это flex-direction, 2 это flex-wrap */
+    /* justify-content: center; */
+    /* переносит следующую строку по центру */
+    /* justify-content: flex-start; */
+    /* переносит следующую строку на начало */
+    /* justify-content: flex-end; */
+    /* переносит следующую строку в конец */
+    /* justify-content: right; */
+    /* тоже самое */
+    /* justify-content: space-around; */
+    /* отсупы до и после элементов*/
+    /* justify-content: space-between; */
+    /* отступы между элементами */
+    height: 500px;
+    /* align-items: center; */
+    /* выравнивает сверху вниз по центру */
+    align-items: stretch;
+    /* растягивается для заполнеия контейнера */
+    align-items: baseline;
+    /* выравнивает по базвовой строке */
+
+}
+div + p {
+color: brown;
+}
+span {
+    color: rgb(227, 143, 16);
+}
+.item {
+    padding: 40px;
+    border: 1px inset red;
+    font-size: 25px;
+}
+.item1 {
+    padding: 20px;
+}
+.item2 {
+    padding: 30px;
+    font-size: 35px;
+}
+.item3 {
+    padding: 40px;
+    font-size: 20px;
+}

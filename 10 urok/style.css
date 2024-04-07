@@ -1,0 +1,71 @@
+body {
+    background: rgb(22,11,221);
+background: linear-gradient(90deg, rgba(22,11,221,1) 5%, rgba(32,121,9,1) 35%, rgba(18,162,119,1) 64%, rgba(0,212,255,1) 100%);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: aqua;
+}
+a:active {
+    color: blue;
+}
+button {
+    background-color: black;
+    color: white;
+    box-shadow: aqua 10px 10px 10px 10px;
+    /* тень */
+}
+button:hover {
+    background-color: aqua;
+}
+button:active {
+    color: blue;
+    background-color: chartreuse;
+}
+/* у псевдокласса есть только 1 двоеточие
+а у псевдоэлементов 2 */
+h1::first-letter {
+    font-size: 300px;
+    color: red;
+}
+    /* меняет первую букву псевдо элемента */
+p::first-line { 
+    color: blue;
+    }
+    p::before {
+        content: url(https://svgsilh.com/svg/2032606.svg) 
+    }
+::marker {
+    color: red;
+    background-color: yellow;
+}
+/* меняет точки в списке */
+::selection {
+    color: red;
+    background-color: yellow;
+}
+/* меняет стили текста */
+h1, p, button, a, input, label, div, ul{
+    font-size: 200px;
+    
+}
+input::placeholder {
+    color: aqua;
+}
+.checked:checked {
+    width: 200px;
+    height: 200px;}
+    p:first-chile {
+        background-color: yellow;
+    }
+    p {
+        opacity: 0.2;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index
+    /* слои */}
